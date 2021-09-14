@@ -1,5 +1,6 @@
-package com.serenitydojo;
+package com.serenitydojo.datatypes;
 
+import com.serenitydojo.HelloWorldWriter;
 import org.junit.Test;
 
 import java.util.Locale;
