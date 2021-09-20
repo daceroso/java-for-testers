@@ -5,6 +5,7 @@ public class Cat {
     private String favoriteFood;
     private int age;
 
+    static final String CAT_NOISE = "Meow";
 
     public Cat(String name, String favoriteFood, int age) {
         this.name = name;
@@ -23,5 +24,26 @@ public class Cat {
 
     public void setFavoriteFood(String favoriteFood) {
         this.favoriteFood = favoriteFood;
+    }
+
+    public void makeNoise() {
+        System.out.println(CAT_NOISE);
+    }
+
+    public void feed(String food) {
+        System.out.println(name + " eats some " + food);
+    }
+
+    public void groom() {
+        lickPaws();
+        cleanFur();
+    }
+
+    private void cleanFur() {
+        System.out.println(name + " clean his fur");
+    }
+
+    private void lickPaws() {
+        System.out.println(name + " licks his paws");
     }
 }
