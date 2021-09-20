@@ -6,13 +6,16 @@ public class Cat {
     public int age;
 
 
-    public void setName(String name) {
+    public Cat(String name, String favoriteFood, int age) {
         this.name = name;
+        this.favoriteFood = favoriteFood;
+        this.age = age;
     }
 
     public String getName() {
         return name;
     }
+    public int getAge(){ return age;}
 
     public String getFavoriteFood() {
         return favoriteFood;

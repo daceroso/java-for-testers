@@ -12,18 +12,17 @@ public class WhenCreatingObjects {
         int  age = 4;
 
 
-        Cat felix = new Cat("Felix");
-        felix.setName("Felix");
-        felix.setFavoriteFood("Tuna");
+        Cat felix = new Cat("Felix", "Tuna", 4);
 
 
-        System.out.println(felix.getFavoriteFood());
         System.out.println(felix.getName());
+        System.out.println(felix.getFavoriteFood());
+        System.out.println(felix.getAge());
 
         felix.age = 4;
 
 
-        Cat spot = new Cat();
+        Cat spot = new Cat("Spot", "Tuna", 3);
         spot.name = "Spot";
         spot.age = 3;
     }
