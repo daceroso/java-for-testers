@@ -17,15 +17,15 @@ public class Cat extends Pet {
 
 
     public Cat(String name, int age) {
-        super(name);
+        super(name,age);
         this.age = age;
         this.favoriteFood = Cat.usualFood();
     }
 
     public Cat(String name, String favoriteFood, int age) {
-        super(name);
+        super(name, age);
         this.favoriteFood = favoriteFood;
-        this.age = age;
+
     }
 
 

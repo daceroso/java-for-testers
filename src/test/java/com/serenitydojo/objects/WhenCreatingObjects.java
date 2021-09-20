@@ -2,6 +2,7 @@ package com.serenitydojo.objects;
 
 import com.serenitydojo.Cat;
 import com.serenitydojo.Dog;
+import com.serenitydojo.Hampster;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -31,6 +32,14 @@ public class WhenCreatingObjects {
         Assert.assertEquals(fido.getName(), "Fido");
         Assert.assertEquals(fido.getFavoriteToy(), "Bone");
         Assert.assertEquals(fido.getAge(), 5);
+    }
+
+    @Test
+    public void creating_a_hampster() {
+        Hampster budy = new Hampster("Budy", 1, "Swinging");
+        Assert.assertEquals(budy.getName(), "Budy");
+        Assert.assertEquals(budy.getAge(), 1);
+        Assert.assertEquals(budy.getFavouriteGame(), "Swinging");
     }
 
 
