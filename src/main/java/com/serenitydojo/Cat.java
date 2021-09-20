@@ -7,6 +7,17 @@ public class Cat {
 
     static final String CAT_NOISE = "Meow";
 
+    public static String usualFood() {
+        return "Tuna";
+    }
+
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.favoriteFood = Cat.usualFood();
+    }
+
     public Cat(String name, String favoriteFood, int age) {
         this.name = name;
         this.favoriteFood = favoriteFood;
