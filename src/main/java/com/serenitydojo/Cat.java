@@ -1,7 +1,11 @@
 package com.serenitydojo;
 
-public class Cat {
-    private String name;
+public class Cat extends Pet {
+    /**
+     * The name of the cat
+     *
+     */
+
     private String favoriteFood;
     private int age;
 
@@ -13,20 +17,18 @@ public class Cat {
 
 
     public Cat(String name, int age) {
-        this.name = name;
+        super(name);
         this.age = age;
         this.favoriteFood = Cat.usualFood();
     }
 
     public Cat(String name, String favoriteFood, int age) {
-        this.name = name;
+        super(name);
         this.favoriteFood = favoriteFood;
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
+
     public int getAge(){ return age;}
 
     public String getFavoriteFood() {
@@ -42,7 +44,7 @@ public class Cat {
     }
 
     public void feed(String food) {
-        System.out.println(name + " eats some " + food);
+        System.out.println(getName() + " eats some " + food);
     }
 
     public void groom() {
@@ -51,10 +53,10 @@ public class Cat {
     }
 
     private void cleanFur() {
-        System.out.println(name + " clean his fur");
+        System.out.println(getName() + " clean his fur");
     }
 
     private void lickPaws() {
-        System.out.println(name + " licks his paws");
+        System.out.println(getName() + " licks his paws");
     }
 }

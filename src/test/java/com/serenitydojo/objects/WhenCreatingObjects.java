@@ -20,7 +20,7 @@ public class WhenCreatingObjects {
 
 
         Cat spot = new Cat("Spot", "Tuna", 3);
-        System.out.println("Spot' age is " + spot.getAge());
+        System.out.println("Spot's age is " + spot.getAge());
     }
 
 
