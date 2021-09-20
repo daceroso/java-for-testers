@@ -1,6 +1,8 @@
 package com.serenitydojo.objects;
 
 import com.serenitydojo.Cat;
+import com.serenitydojo.Dog;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class WhenCreatingObjects {
@@ -19,11 +21,17 @@ public class WhenCreatingObjects {
         System.out.println(felix.getFavoriteFood());
         System.out.println(felix.getAge());
 
-        felix.age = 4;
-
-
         Cat spot = new Cat("Spot", "Tuna", 3);
-        spot.name = "Spot";
-        spot.age = 3;
+        System.out.println("Spot' age is " + spot.getAge());
+    }
+
+
+
+    @Test
+    public void creating_a_dog() {
+        Dog fido = new Dog("Fido", "Bone", 5);
+        Assert.assertEquals(fido.getName(), "Fido");
+        Assert.assertEquals(fido.getFavoriteToy(), "Bone");
+        Assert.assertEquals(fido.getAge(), 5);
     }
 }
