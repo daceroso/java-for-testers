@@ -12,4 +12,9 @@ public class Hampster extends Pet{
     public String getFavouriteGame() {
         return favouriteGame;
     }
+
+    @Override
+    public String makeNoise() {
+        return "Squeak";
+    }
 }

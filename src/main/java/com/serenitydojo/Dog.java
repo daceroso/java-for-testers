@@ -4,7 +4,7 @@ public class Dog extends Pet{
     private String favoriteToy;
     private int age;
 
-
+    static final String DOG_NOISE = "Woof";
     public Dog(String name, String favoriteToy, int age) {
         super(name, age);
         this.favoriteToy = favoriteToy;
@@ -18,5 +18,9 @@ public class Dog extends Pet{
 
     public int getAge() {
         return age;
+    }
+
+    public String makeNoise() {
+        return DOG_NOISE;
     }
 }
