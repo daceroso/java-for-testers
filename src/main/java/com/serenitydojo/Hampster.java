@@ -15,6 +15,11 @@ public class Hampster extends Pet{
 
     @Override
     public String makeNoise() {
-        return "Squeak";
+        return " Squeak";
+    }
+
+    @Override
+    public String play() {
+        return "runs in wheel";
     }
 }

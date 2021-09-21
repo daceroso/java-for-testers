@@ -20,8 +20,11 @@ public abstract class Pet {
     }
 
     public abstract String makeNoise();
+    public abstract String play();
 
     public String goForWalks() {
         return "Walk Walk Walk";
     }
+
+
 }

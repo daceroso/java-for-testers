@@ -82,4 +82,25 @@ public class WhenCreatingObjects {
         System.out.println("Rusty goes " + rusty.makeNoise());
 
     }
+
+
+
+    @Test
+    public void pets_can_play() {
+        Pet felix = new Cat("Felix", 4);
+        Pet fido = new Dog("Fido", "bone", 5);
+        Pet rusty = new Hampster("Rusty", 1, "Wheels");
+
+        System.out.println("Felix " + felix.play());
+        System.out.println("Fido " + fido.play());
+        System.out.println("Rusty " + rusty.play());
+
+
+        Assert.assertEquals(felix.play(), "plays with string");
+        Assert.assertEquals(fido.play(), "plays with bone");
+        Assert.assertEquals(rusty.play(), "runs in wheel");
+    }
+
+
+
 }
