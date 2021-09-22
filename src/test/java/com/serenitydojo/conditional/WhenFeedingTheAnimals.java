@@ -81,6 +81,7 @@ public class WhenFeedingTheAnimals {
             System.out.println(moreColors[i]);
         }
 
+        
         System.out.println();
 
         List<String> myColors = new ArrayList<>();

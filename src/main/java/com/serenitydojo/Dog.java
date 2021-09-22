@@ -1,8 +1,8 @@
 package com.serenitydojo;
 
 public class Dog extends Pet{
-    private String favoriteToy;
-    private int age;
+    private final String favoriteToy;
+    private final int age;
 
     static final String DOG_NOISE = "Woof";
     public Dog(String name, String favoriteToy, int age) {
