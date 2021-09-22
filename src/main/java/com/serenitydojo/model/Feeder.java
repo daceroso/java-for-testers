@@ -3,14 +3,14 @@ package com.serenitydojo.model;
 public class Feeder {
 
 
-    public String feeds(String animal, boolean isPremium) {
+    public String feeds(AnimalType animal, boolean isPremium) {
 
         switch (animal) {
-            case "Cat":
+            case CAT:
                 return isPremium ? "Salmon" : "Tuna";
-            case "Dog":
+            case DOG:
                 return isPremium ? "Deluxe food" : "Dog food";
-            case "Hampster":
+            case HAMPSTER:
                 return isPremium ? "Lettuce" : "Cabbage";
             default:
                return "Don't know this animal - Don't know the food";
