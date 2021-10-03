@@ -25,14 +25,19 @@ public class WhenWorkingWithExceptions {
     }
 
     @Test
-    public void shouldCountWordsAFile() throws IOException {
+    public void shouldCountWordsAFile() throws Exception {
         int numberOfWord = wordCounter.numberOfWordsInFile("src/main/java/com/serenitydojo/resources/hello.txt");
     }
 
-    @Test
-    public void shouldReportAnErrorIfTheFileDoesNotExist() {
+    @Test(expected = FileHasNoWordException.class)
+    public void shouldReportAnErrorIfTheFileDoesNotExist() throws Exception {
 
        int numberOfWords =  wordCounter.numberOfWordsInFile("file-that-does-not-exist.txt");
        assertThat(numberOfWords).isEqualTo(0);
+    }
+
+    @Test(expected = FileHasNoWordException.class)
+    public void shouldThrowMeaningfulExceptionIfThereAreNotWordsInTheFile() throws Exception{
+        wordCounter.numberOfWordsInFile("src/main/java/com/serenitydojo/resources/noWords.txt");
     }
 }
