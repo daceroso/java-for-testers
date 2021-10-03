@@ -30,8 +30,9 @@ public class WhenWorkingWithExceptions {
     }
 
     @Test
-    public void shouldReportAnErrorIfTheFileDoesNotExist() throws IOException{
+    public void shouldReportAnErrorIfTheFileDoesNotExist() {
 
-        wordCounter.numberOfWordsInFile("file-that-does-not-exist.txt");
+       int numberOfWords =  wordCounter.numberOfWordsInFile("file-that-does-not-exist.txt");
+       assertThat(numberOfWords).isEqualTo(0);
     }
 }
